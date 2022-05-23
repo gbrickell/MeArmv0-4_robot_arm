@@ -11,8 +11,8 @@
 #  - v0.4 3D printed version at https://www.thingiverse.com/thing:616239
 #  - v0.4 updated/corrected 3D print designs for Raspberry Pi Maker Kit usage at Prusa web site 
 
-# at some point the 'driver' used below and included with the original s/w set should be
-#   substituted by the general purpose PCA9685 library
+# at some point the 'driver' used below and included with the original s/w set could be
+#   substituted by a general purpose PCA9685 library
 
 # this file should be in the same folder as the test code
 

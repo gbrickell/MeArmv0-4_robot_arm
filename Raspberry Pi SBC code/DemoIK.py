@@ -8,29 +8,28 @@
 #  Simple demo of meArm library to walk through some points defined in Cartesian coordinates
 
 # the command path below assumes all the code is in a 'complete_projects' folder within the Maker Kit folder structure
-# command to run: python3 /home/pi/RPi_maker_kit5/complete_projects/MeArm_v0-4/DemoIK.py
+# command to run: python3 ./RPi_maker_kit5/complete_projects/MeArm_v0-4/DemoIK.py
+#  - assumes the code is in the /home/YOURUSERNAME/RPi_maker_kit5/complete_projects/MeArm_v0-4 folder
+# or just use Thonny IDE
 
 ####################################################################
 #  basic buzzer functions
-#  only does something if the 'installed' parameter is 'yes'
-#  and assumes the buzzer pin is already set as an OUTPUT
 ####################################################################
 
 def buzz(frequency, length, installed):	 #function "buzz" is fed the pitch (frequency) and duration (length in seconds)
-    if installed == 'yes':
-        # allow for a 'silent' duration
-        if(frequency==0):
-            time.sleep(length)
-            return
-        period = 1.0 / frequency 		     #in physics, the period (sec/cyc) is the inverse of the frequency (cyc/sec)
-        delayValue = period / 2		         #calcuate the time for half of the wave
-        numCycles = int(length * frequency)	 #the number of waves to produce is the duration times the frequency
-	
-        for i in range(numCycles):		   #start a loop from 0 to the variable "cycles" calculated above
-            GPIO.output(buzzer_pin, True)  #set buzzer pin to high
-            time.sleep(delayValue)		   #wait with buzzer pin high
-            GPIO.output(buzzer_pin, False) #set buzzer pin to low
-            time.sleep(delayValue)		   #wait with buzzer pin low
+    # allow for a 'silent' duration
+    if(frequency==0):
+        time.sleep(length)
+        return
+    period = 1.0 / frequency 		     #in physics, the period (sec/cyc) is the inverse of the frequency (cyc/sec)
+    delayValue = period / 2		         #calcuate the time for half of the wave
+    numCycles = int(length * frequency)	 #the number of waves to produce is the duration times the frequency
+
+    for i in range(numCycles):		   #start a loop from 0 to the variable "cycles" calculated above
+        GPIO.output(buzzer_pin, True)  #set buzzer pin to high
+        time.sleep(delayValue)		   #wait with buzzer pin high
+        GPIO.output(buzzer_pin, False) #set buzzer pin to low
+        time.sleep(delayValue)		   #wait with buzzer pin low
 
 def beep(number, length):  # simple function for beep length and on/off for 'number' times at standard beep frequency 1200Hz
     for i in range(1, number+1):
