@@ -1,5 +1,5 @@
 
-readme_1.0_mearm0-4.txt - version control details for the Raspberry Pi Maker Kit robot arm build
+readme_2.0_mearm0-4.txt - version control details for the Raspberry Pi Maker PCB robot arm build
   
   please note:
   ------------
@@ -11,15 +11,14 @@ readme_1.0_mearm0-4.txt - version control details for the Raspberry Pi Maker Kit
 
 build components release package 1.0 May 2022
 --------------------------------------------------------
-  components for the build are listed in the RPi_Maker_Kit-MeArm_V0-4_robot_arm_build_and_usage_documentation_v1-1.pdf document
+  components for the build are listed in the Raspberry_Pi-MeArm_V0-4_robot_arm_build_and_usage_documentation_v2-0.pdf document
   
   designs for the 3D printed components can be downloaded from https://www.printables.com/model/113779-robot-arm-controlled-by-a-raspberry-pi
 
 
-software & documentation release package 1.0 May 2022
+software & documentation release package 2.0 May 2026
 ------------------------------------------------------------------
-  updates made to the initial prototype release in 2018 for use with the Raspberry Pi Maker Kit and to generalise 
-    the Raspberry Pi user name instead of assuming the 'old' default of 'pi' - but all file names remain the same
+  updates made to the release in 2026 for use with the Raspberry Pi Maker PCB
 
 
 
@@ -54,4 +53,4 @@ software & documentation release package 0.1 September 2018
 
   
   
-copyright 2018 Enmore Green Limited
+copyright 2018-2026 Geoff Brickell
